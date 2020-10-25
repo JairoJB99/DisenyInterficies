@@ -1,0 +1,32 @@
+/* Block Component HEADER */
+.header {}
+
+    /* Element NAV */
+    .header__nav {}
+
+        /* Modifier */
+        .header--main {}
+
+/* Block Component SECTION */
+.section {}
+
+    /* Element ARTICLE */
+    .section__article {}
+    .section__article__title {}
+    .section__article__img {}
+    .section__article__description {}
+
+        /* Modifier */
+        .section--main {}
+
+/* Block Component ASIDE */
+.aside {}
+
+    /* Modifier */
+    .aside--main {}
+
+/* Block Component FOOTER */
+.footer {}
+
+    /* Modifier*/
+    .footer--main {}

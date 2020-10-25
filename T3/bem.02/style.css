@@ -1,0 +1,36 @@
+/* Element */
+.button {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Element Modifier */
+.button__button2 {
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.button__button3{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+
+.button__button3:hover{
+    border-color: #000;
+}
+
+.button__button4{
+    background-color: #000;
+    border: 1px solid #e8e8e8;
+    color:#fff;
+}
+
+.button__button4:hover{
+    color: tomato;
+    border-color: tomato;
+}
