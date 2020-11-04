@@ -1,0 +1,20 @@
+.div1 {
+    height: 60px;
+    width: 290px;
+    margin: 15px;
+    font-size: 17px;
+    padding: 20px 0px 0px 15px;
+    border-style: solid;
+    border-width: 10px 15px 5px 1px;
+    border-color: black;
+}
+
+.div2 {
+    width: 340px;
+    margin: 15px;
+    font-size: 14px;
+    font-family: "Consolas", monospace;
+    border-style: solid;
+    border-width: 10px 15px 5px 1px;
+    border-color: red blue lawngreen grey;
+}
