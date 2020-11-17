@@ -1,0 +1,13 @@
+#headerRealtive {
+    position: relative;
+}
+#headerLeft {
+    position: absolute;
+    top: 70px;
+    left: -15px;
+}
+#headerRight {
+    position: absolute;
+    top: 140px;
+    left: 25px;
+}

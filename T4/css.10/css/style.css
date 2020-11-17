@@ -1,0 +1,11 @@
+.wrap {
+    width: 660px;
+    height: 215px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.text {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
