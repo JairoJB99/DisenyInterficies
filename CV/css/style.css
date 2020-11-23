@@ -1,19 +1,44 @@
-.nav {
+html {}
 
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/natureBackground.jpg');
 }
 
-.nav__image {
-
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: auto;
+    background-color: white;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    width: 110%;
+    height: 100%;
 }
 
-.nav__image__a {
-
+.main {
+    width: 87%;
+    background-color: white;
 }
 
-.nav__image__a__imageGitHub {
-
+.section {
+    overflow: scroll;
+    height: 37em;
 }
 
-.nav__image__a_span {
+.nav {}
 
-}
+.nav__image {}
+
+.nav__image__a {}
+
+.nav__image__a__imageGitHub {}
+
+.nav__image__a_span {}
