@@ -1,44 +1,128 @@
 html {}
 
-.body {
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../images/natureBackground.jpg');
+    background-image: url('../images/codeBlurred2.jpg');
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-size: auto;
+    position: fixed;
+    top: 0;
+    text-align: center;
     background-color: white;
+    width: 100%;
+    height: 7em;
     border-bottom: 2px solid black;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    width: 110%;
-    height: 100%;
 }
 
-.main {
-    width: 87%;
+main {
+    margin-top: 6em;
+    padding-top: 2em;
+    width: 80%;
     background-color: white;
+    margin-bottom: 5em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: grid;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav__wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__wrap__img {
+    height: 13em;
+    width: 13em;
+    margin-top: 3em;
+    border-radius: 20em;
+    margin-bottom: 3em;
+    background-image: url('../images/profile.jpeg');
+    background-size: cover;
+}
+
+.nav__gird {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 3em;
+    height: auto;
+    width: auto;
+    margin-right: 2em;
+    margin-left: 2em;
+    justify-content: center;
+}
+
+.nav__grid__a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav__grid__a__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    border-radius: 3em;
+    margin-right: 1em;
+    border: 0.1em solid black
+}
+
+.nav__grid__a__div__img {
+    width: 100%;
+    height: auto;
+}
+
+.nav__grid__a__div--Instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.nav__grid__a__span {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;    
 }
 
 .section {
-    overflow: scroll;
-    height: 37em;
+    display: grid;
+    width: 95%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto ;
+    border-left: 0.15em solid black;
+    column-gap: 2em;
+    row-gap: 2em;
 }
 
-.nav {}
+.contactButton {
+    position: relative;
+    left: 200%;
+    bottom: -2em;
+    height: 4em;
+    width: 200%;
+}
 
-.nav__image {}
-
-.nav__image__a {}
-
-.nav__image__a__imageGitHub {}
-
-.nav__image__a_span {}
+.section__div {
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
