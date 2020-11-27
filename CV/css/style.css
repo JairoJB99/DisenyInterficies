@@ -99,14 +99,13 @@ nav {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease 0s;
-
 }
 
 .nav__grid__a__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: auto;
     width: 25%;
     border-radius: 16em;
     margin-right: 1em;
@@ -147,7 +146,6 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div--skills {
@@ -163,7 +161,6 @@ nav {
     color: var(--background-color);
     background-color: var(--primary-color);
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div:hover {
@@ -177,7 +174,6 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div--skills:hover {
@@ -193,7 +189,6 @@ nav {
     margin: 0.5em;
     color: var(--third-color);
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div__container {
@@ -206,7 +201,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: auto;
     width: 10%;
     border-radius: 16em;
     margin-right: 1em;
@@ -250,13 +245,11 @@ nav {
 .section__wrap__div--skills:hover .section__wrap__div__container__progressBar {
     border: 1px solid var(--third-color);
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain1 {
     background-color: var(--third-color);
     transition: all 0.3s ease 0s;
-
 }
 
 .section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain2 {
