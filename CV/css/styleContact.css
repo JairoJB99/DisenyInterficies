@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+:root {
+    --primary-font: 'Montserrat';
+    --primary-font-light: 'Montserrat';
+    --font-color: var(--third-color);
+    --primary-color: #30475e;
+    --secondary-color: #f05454;
+    --third-color: #222831;
+    --background-color: #e8e8e8;
+}
+
+* {
+    font-family: var(--primary-font);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('../images/codeBlurred2.jpg');
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: var(--third-color);
+    width: 100%;
+    height: 7em;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+.main {
+    margin-top: 6em;
+    padding-top: 2em;
+    width: 80%;
+    background-color: rgba(232, 232, 232, 0.80);
+    margin-bottom: 5em;
+    column-gap: 2em;
+    padding: 3em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    justify-items: center;
+}
+
+.main__form {
+    margin: 2px;
+    color: var(--font-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__form__input {
+    height: 3em;
+    width: 26em;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--third-color);
+    background: transparent;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: var(--third-color);
+    transition: 0.5s all;
+}
+
+.main__form__input--country {
+    height: 3em;
+    width: 27.5em;
+    color: var(--font-color);
+    background: transparent;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: var(--third-color);
+    transition: 0.5s all;
+}
+
+.main__form__input--file {
+    margin-top: 2em;
+}
+
+.main__form__input--message {
+    margin-top: 2em;
+    height: 8em;
+    width: 27.5em;
+    color: var(--font-color);
+    background: none;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: var(--third-color);
+    transition: 0.5s all;
+    text-align: start;
+}
+
+.main__form__input:hover,
+.main__form__input:focus,
+.main__form__input--country:hover,
+.main__form__input--country:focus,
+.main__form__input--message:hover,
+.main__form__input--message:focus {
+    outline: none;
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-color: var(--secondary-color);
+}
+
+.contactButton {
+    position: relative;
+    left: 0%;
+    bottom: -5em;
+    height: 4em;
+    width: 60%;
+    justify-content: center;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 1em 1em rgba(25, 25, 25, 0.55);
+}
+
+.contactButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(1em);
+    box-shadow: 0px 1em 1em rgba(240, 84, 84, 0.55);
+}
+
+::-webkit-scrollbar {
+    width: 2.5px;
+    height: auto;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 0px;
+}
+
+::placeholder {
+    color: var(--third-color);
+}

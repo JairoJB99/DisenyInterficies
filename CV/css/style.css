@@ -1,4 +1,14 @@
-html {}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+:root {
+    --primary-font: 'Montserrat';
+    --primary-font-light: 'Montserrat';
+    --font-color: var(--third-color);
+    --primary-color: #30475e;
+    --secondary-color: #f05454;
+    --third-color: #222831;
+    --background-color: #e8e8e8;
+}
 
 body {
     display: flex;
@@ -12,48 +22,46 @@ body {
     position: fixed;
     top: 0;
     text-align: center;
-    background-color: white;
+    background-color: var(--third-color);
     width: 100%;
     height: 7em;
-    border-bottom: 2px solid black;
+    /* height: 15.5%; */
+    border-bottom: 2px solid var(--secondary-color);
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
 }
 
 main {
     margin-top: 6em;
     padding-top: 2em;
     width: 80%;
-    background-color: white;
+    background: linear-gradient(90deg, rgba(34, 40, 49, 0.98) 20%, rgba(232, 232, 232, 0.95) 20%, rgba(232, 232, 232, 0.85) 100%);
+    /* background-color: rgba(232, 232, 232, 0.8); */
     margin-bottom: 5em;
     display: grid;
     grid-template-columns: 20% 80%;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    display: grid;
-    justify-content: center;
+    font-family: var(--primary-font);
 }
 
 nav {
-    width: 100%;
-}
-
-.nav__wrap {
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
 }
 
 .nav__wrap__img {
-    height: 13em;
-    width: 13em;
+    width: 100%;
+    height: auto;
     margin-top: 3em;
-    border-radius: 20em;
     margin-bottom: 3em;
-    background-image: url('../images/profile.jpeg');
-    background-size: cover;
+    border-radius: 20em;
+    border: 2px solid var(--secondary-color);
 }
 
 .nav__gird {
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     row-gap: 3em;
     height: auto;
     width: auto;
@@ -70,59 +78,232 @@ nav {
     width: 100%;
     align-items: center;
     justify-content: flex-start;
+    color: white;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
 
-.nav__grid__a__div {
+.nav__grid__a:hover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+    border-radius: 16em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav__grid__a__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    height: 2em;
-    width: 2em;
-    border-radius: 3em;
+    height: 25%;
+    width: 25%;
+    border-radius: 16em;
     margin-right: 1em;
-    border: 0.1em solid black
-}
-
-.nav__grid__a__div__img {
-    width: 100%;
-    height: auto;
-}
-
-.nav__grid__a__div--Instagram {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .nav__grid__a__span {
     display: flex;
     justify-content: flex-start;
-    text-align: start;    
+    text-align: start;
 }
 
 .section {
-    display: grid;
+    display: flex;
     width: 95%;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto ;
-    border-left: 0.15em solid black;
-    column-gap: 2em;
-    row-gap: 2em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section__wrap {
+    display: flex;
+    width: 100%;
+    border-radius: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--primary-font-light);
+}
+
+.section__wrap__div {
+    width: 40%;
+    height: 16em;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div--skills {
+    width: 40%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 1.5em;
+    align-self: center;
+    justify-self: center;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div:hover {
+    width: 40%;
+    height: 16em;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    margin: 0.5em;
+    color: var(--third-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div--skills:hover {
+    width: 40%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 1.5em;
+    align-self: center;
+    justify-self: center;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    margin: 0.5em;
+    color: var(--third-color);
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section__wrap__div__container__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 10%;
+    border-radius: 16em;
+    margin-right: 1em;
+}
+
+.section__wrap__div__container__progressBar {
+    border: 1px solid var(--secondary-color);
+    height: 1.5em;
+    border-radius: 1em;
+    width: 85%;
+}
+
+.section__wrap__div__container__progressBar__contain1 {
+    background-color: var(--secondary-color);
+    height: 1.5em;
+    width: 35%;
+    border-radius: 1em;
+}
+
+.section__wrap__div__container__progressBar__contain2 {
+    background-color: var(--secondary-color);
+    height: 1.5em;
+    width: 40%;
+    border-radius: 1em;
+}
+
+.section__wrap__div__container__progressBar__contain3 {
+    background-color: var(--secondary-color);
+    height: 1.5em;
+    width: 89%;
+    border-radius: 1em;
+}
+
+.section__wrap__div__container__progressBar__contain4 {
+    background-color: var(--secondary-color);
+    height: 1.5em;
+    width: 72%;
+    border-radius: 1em;
+}
+
+.section__wrap__div--skills:hover .section__wrap__div__container__progressBar {
+    border: 1px solid var(--third-color);
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain1 {
+    background-color: var(--third-color);
+    transition: all 0.3s ease 0s;
+
+}
+
+.section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain2 {
+    background-color: var(--third-color);
+    transition: all 0.3s ease 0s;
+}
+
+.section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain3 {
+    background-color: var(--third-color);
+    transition: all 0.3s ease 0s;
+}
+
+.section__wrap__div--skills:hover .section__wrap__div__container__progressBar__contain4 {
+    background-color: var(--third-color);
+    transition: all 0.3s ease 0s;
+}
+
+.section__wrap__div__title {
+    display: flex;
+    padding-right: auto;
+    text-decoration: underline;
 }
 
 .contactButton {
     position: relative;
     left: 200%;
-    bottom: -2em;
+    bottom: -1em;
     height: 4em;
     width: 200%;
+    letter-spacing: 2.5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 1em 1em rgba(25, 25, 25, 0.55);
 }
 
-.section__div {
-    width: 70%;
-    align-self: center;
-    justify-self: center;
+.contactButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(1em);
+    box-shadow: 0px 1em 1em rgba(240, 84, 84, 0.55);
+    transition: all 0.3s ease 0s;
 }
