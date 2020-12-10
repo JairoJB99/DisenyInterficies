@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grid Area</title>
+
+    <style media="screen">
+        .wrap {
+            background-color: black;
+            font-weight: bold;
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'left main right'
+                'footer footer footer';
+            grid-template-rows: 15% auto 8%;
+            grid-template-columns: 15% auto 15%;
+            height: 100vh;
+        }
+
+        .wrap>* {
+            font-size: 1.5em;
+            padding-top: 1em;
+        }
+
+        .title {
+            background-color: #ff5a4f;
+            grid-area: header;
+        }
+
+        .right {
+            background-color: #00157b;
+            grid-area: right;
+        }
+
+        .content {
+            background-color: #008024;
+            grid-area: main;
+        }
+
+        .left {
+            background-color: #012af7;
+            grid-area: left;
+        }
+
+        .footer {
+            background-color: #ff031e;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body class="wrap">
+    <header class="title">
+        Title
+    </header>
+    <aside class="right">
+        Aside Right
+    </aside>
+    <main class="content">
+        Content
+    </main>
+    <aside class="left">
+        Aside Left
+    </aside>
+    <footer class="footer">
+        Footer
+    </footer>
+</body>
+
+</html>
