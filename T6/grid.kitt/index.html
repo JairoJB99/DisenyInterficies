@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grid Kitt</title>
+    <meta name="language" content="ES">
+    <meta name="author" content="Jairo Julià Bravo" />
+    <style>
+        * {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .instrumentPanel {
+            background-color: black;
+            width: 70%;
+            height: 90%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 3fr 1fr;
+            padding: 4em;
+            column-gap: 1em;
+            row-gap: 1em;
+        }
+
+        .instrumentPanel__equalizer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: auto;
+            padding: 2em;
+            height: auto;
+            width: auto;
+            grid-area: 1 / 2 / 4 / 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2em;
+        }
+
+        .instrumentPanel__equalizer div {
+            background-color: red;
+        }
+
+        .instrumentPanel_modes {
+            display: grid;
+            grid-template-columns: 0.5fr 3fr;
+            gap: 0.5em 4em;
+            grid-area: 4 / 2 / span 2 / 3;
+            width: auto;
+            height: auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+
+        .instrumentPanel__modes {
+            display: grid;
+            grid-area: 4 / 2 / span 2 / 3;
+            grid-template-columns: 0.5fr 3fr;
+            gap: 0.5em 4em;
+            width: auto;
+            height: auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+
+        .instrumentPanel__modes div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 120%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .instrumentPanel__modes--yellow {
+            background-color: yellow;
+        }
+
+        .instrumentPanel__modes--red {
+            background-color: red;
+        }
+
+        .instrumentPanel__modes--green {
+            background-color: green;
+        }
+
+        .instrumentPanel__led {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            font-size: 150%;
+            border-radius: 0.5em;
+        }
+
+            .instrumentPanel__led--yellow {
+                background-color: yellow;
+            }
+
+            .instrumentPanel__led--red {
+                background-color: red;
+            }
+    </style>
+
+
+
+<body>
+    <section class="instrumentPanel">
+
+        <div class="instrumentPanel__led  instrumentPanel__led--yellow">ALT</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--yellow">AUX</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--yellow">OIL PRESS</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--yellow">SAT COMM</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">OIL TEMP</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">ACC</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">EGT</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">RADAR</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">FUEL</div>
+
+        <div class="instrumentPanel__led  instrumentPanel__led--red">MP1</div>
+
+        <div class="instrumentPanel__equalizer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="instrumentPanel__modes">
+            <div class="instrumentPanel__modes--yellow"></div>
+            <div class="instrumentPanel__modes--green">NORMAL CRUISE</div>
+
+            <div class="instrumentPanel__modes--yellow"></div>
+            <div class="instrumentPanel__modes--yellow">AUTO CRUISE</div>
+
+            <div class="instrumentPanel__modes--yellow"></div>
+            <div class="instrumentPanel__modes--red">PURSUIT</div>
+        </div>
+
+    </section>
+</body>
+</html>
