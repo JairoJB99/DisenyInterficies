@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3.04</title>
+    <style>
+        :root {
+            --border: 1px;
+            --highlighted: yellow
+        }
+
+
+        .list {
+            width: 150px;
+            margin: 30px ;
+            padding: 20px 0px 20px;
+            border: var(--border) solid black;
+        }
+
+        .list--secondList {
+            padding: 30px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .list--listA ul li:nth-child(2) {
+            background-color: var(--highlighted);
+        }
+
+        /* odd elementos impares */
+        .list--listB ul li:nth-child(odd) {
+            background-color: var(--highlighted);
+        }
+
+        /* Elementos de 3 en 3 */
+        .list--listC li:nth-child(3n) {
+            background-color: var(--highlighted);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="list list--listA">
+        <ul>
+            <li>Rojo</li>
+            <li>Verde</li>
+            <li>Azul</li>
+            <li>Gris</li>
+            <li>Violeta</li>
+            <li>Amarillo</li>
+            <li>Negro</li>
+        </ul>
+    </section>
+
+    <section class="list list--listB">
+        <ul>
+            <li>Rojo</li>
+            <li>Verde</li>
+            <li>Azul</li>
+            <li>Gris</li>
+            <li>Violeta</li>
+            <li>Amarillo</li>
+            <li>Negro</li>
+        </ul>
+    </section>
+
+    <section class="list list--listC">
+        <ul>
+            <li>Rojo</li>
+            <li>Verde</li>
+            <li>Azul</li>
+            <li>Gris</li>
+            <li>Violeta</li>
+            <li>Amarillo</li>
+            <li>Negro</li>
+        </ul>
+    </section>
+</body>
+
+</html>

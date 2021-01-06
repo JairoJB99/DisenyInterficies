@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3.03</title>
+    <style media="screen">
+        :root {
+            --border: 1px solid black;
+            --highlighted: yellow;
+        }
+
+        section {
+            border: var(--border);
+            width: 300px;
+            height: fit-content;
+            padding: 20px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3:target {
+            background-color: var(--highlighted);
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#conclusion">Conclusión</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h3 id="introduccion">Introducción</h3>
+                <p>Maecenas sed...</p>
+            </article>
+
+            <article>
+                <h3 id="resultados">Resultados</h3>
+                <p>Vivamus sagittis lacus...</p>
+            </article>
+
+            <article>
+                <h3 id="conclusion">Conclusión</h3>
+                <p>Donec ullamcorper nulla...</p>
+            </article>
+        </main>
+    </section>
+</body>
+
+</html>
