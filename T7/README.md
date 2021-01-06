@@ -17,4 +17,4 @@
 [https://jairojb99.github.io/DisenyInterficies/T7/css3.06/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.06/index.html)
 
 ## CSS.07
-[https://jairojb99.github.io/DisenyInterficies/T7/gcss3.07/index.html](https://jairojb99.github.io/DisenyInterficies/T7/gcss3.07/index.html)
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.07/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.07/index.html)
