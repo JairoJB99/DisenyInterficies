@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>css3.06</title>
+  <style>
+    :root {
+      --heigth: 750px;
+      --background-NR: no-repeat;
+    }
+
+    section {
+      height: var(--heigth);
+      background-image:
+        url(https://pngimg.com/uploads/moon/moon_PNG52.png),
+        url(https://pngimg.com/uploads/astronaut/astronaut_PNG29.png),
+        url('./images/hearth.png'),
+        url(https://i.pinimg.com/originals/ac/dd/06/acdd06498d7bbfca9ec951244b97f997.jpg);
+      background-position: top right, center, left, right bottom;
+      background-repeat: var(--background-NR), var(--background-NR), var(--background-NR), var(--background-NR), repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <section></section>
+</body>
+
+</html>
