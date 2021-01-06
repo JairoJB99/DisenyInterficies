@@ -8,7 +8,7 @@
 [https://jairojb99.github.io/DisenyInterficies/T7/css3.03/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.03/index.html)
 
 ## CSS.04
-[https://jairojb99.github.io/DisenyInterficies/T7/css3.04/index.html](ttps://jairojb99.github.io/DisenyInterficies/T7/css3.04/index.html)
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.04/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.04/index.html)
 
 ## CSS.05
 [https://jairojb99.github.io/DisenyInterficies/T7/css3.05/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.05/index.html)
