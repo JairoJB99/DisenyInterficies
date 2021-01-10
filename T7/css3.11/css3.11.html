@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions :: DIW</title>
+  <style media="screen">
+
+    :root {
+      --backgroundColor: #f36c4e ;
+      --border: dotted;
+      --padding: 10px;
+      --fontSize: 2em;
+    }
+
+    .box {
+      border-style: var(--border);
+      border-width: 10px;
+      display: block;
+      width: fit-content;
+      padding: var(--padding);
+    }
+
+    .box:hover {
+      font-size: var(--fontSize);
+      border: 10px solid black;
+      border-radius: 0.5em;
+      background-color: var(--backgroundColor) ;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Transitions</h1>
+  <span class="box">JAIRO</span>
+</body>
+
+</html>
