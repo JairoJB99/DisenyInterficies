@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Animaitons</title>
+    <style media="screen">
+        :root {
+            --animation-duration: infinite;
+            --animation-time: 4s;
+            --color-animated: red;
+            --initial-color-animated: black;
+            --animation1-name: titleAnimation;
+            --animation2-name: squareAnimation;
+        }
+
+        .title {
+            color: var(--color-animated);
+            width: 8em;
+            margin: 60px;
+            text-align: center;
+            animation: var(--animation-time) var(--animation-duration) var(--animation1-name);
+        }
+
+        @keyframes titleAnimation {
+
+            from {
+                color: var(--initial-color-animated);
+                transform: rotate3d(1, 1, 1, 0deg)
+            }
+
+            to {
+                color: var(--color-animated);
+                transform: rotate3d(1, 1, 1, 360deg)
+            }
+        }
+
+        @keyframes squareAnimation {
+
+            0% {
+                background-color: var(--color-animated);
+                transform: translate(50px);
+            }
+
+            25% {
+                background-color: yellow;
+                transform: translate(100px);
+            }
+
+            50% {
+                background-color: blue;
+                transform: translate(150px);
+            }
+
+            100% {
+                background-color: green;
+                transform: translate(200px);
+            }
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin-left: 60px;
+            margin-top: 150px;
+            background-color: var(--color-animated);
+        }
+
+        .box:hover {
+            animation: var(--animation-time) var(--animation-duration) var(--animation2-name);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="title">
+        <h1>2n DAW</h1>
+    </header>
+
+    <main>
+        <div class="box">
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -30,3 +30,9 @@
 
 ## CSS.11
 [https://jairojb99.github.io/DisenyInterficies/T7/css3.11/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.11/index.html)
+
+## CSS.12
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.12/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.12/index.html)
+
+## CSS.13
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.13/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.13/index.html)
