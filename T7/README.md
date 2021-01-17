@@ -36,3 +36,9 @@
 
 ## CSS.13
 [https://jairojb99.github.io/DisenyInterficies/T7/css3.13/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.13/index.html)
+
+## CSS.14
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.14/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.14/index.html)
+
+## CSS.15
+[https://jairojb99.github.io/DisenyInterficies/T7/css3.15/index.html](https://jairojb99.github.io/DisenyInterficies/T7/css3.15/index.html)
