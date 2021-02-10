@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DROP</title>
+    <style media="screen">
+      body,
+      html {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      .box--blue {
+        background-color: blue;
+      }
+
+      .box--cyan {
+        background-color: cyan;
+      }
+
+      .box--green {
+        background-color: green;
+      }
+
+      @media screen and (min-width: 450px) {
+        .box--blue {
+          width: 25%;
+        }
+
+        .box--cyan {
+          width: 75%;
+        }
+      }
+
+      @media screen and (min-width: 550px)  {
+        .box--blue,
+        .box--green {
+          width: 25%;
+        }
+
+        .box--cyan {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="box box--blue"></div>
+      <div class="box box--cyan"></div>
+      <div class="box box--green"></div>
+    </section>
+  </body>
+</html>

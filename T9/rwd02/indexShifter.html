@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout Shifter</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 100%;
+        min-height: 150px;
+      }
+
+      .box--darkBlue {
+        background-color: #2a457a;
+      }
+
+      .box--lightBlue {
+        background-color: #099dd9;
+      }
+
+      .box--green {
+        background-color: #0c8542;
+      }
+
+      .box--red {
+        background-color: #ec1d3b;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 450px) {
+        .box--darkBlue {
+          width: 50%;
+        }
+        #inner-container {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .box--darkBlue {
+          width: 25%;
+          order: -1;
+        }
+        #inner-container {
+          width: 50%;
+        }
+        .box--red {
+          width: 25%;
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box--darkBlue"></div>
+      <div class="container" id="inner-container">
+        <div class="box box--lightBlue"></div>
+        <div class="box box--green"></div>
+      </div>
+      <div class="box box--red"></div>
+    </div>
+  </body>
+</html>
