@@ -1,0 +1,64 @@
+$text_color: #eee;
+$text_color_hover: #fff;
+$background_color: #666;
+$hover_color_list: #888;
+
+@mixin text_color_background_color {
+  background-color: $background_color;
+  color: $text_color;
+}
+
+@mixin background_color_text_color-hover {
+  color: $text_color_hover;
+  background-color: $hover_color_list;
+}
+
+@mixin box-sizing($dimensions) {
+  box-sizing: $dimensions;
+}
+
+@mixin transtions($property, $duration, $timing: linear) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
+
+@mixin animations($name, $duration, $timing: linear) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+}
+
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: $text_color;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  @include text_color_background_color();
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  @include box-sizing(border_box);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
+
+@keyframes iluminar {
+  from {
+    background-color: $background_color;
+    color: $text_color;
+  }
+  to {
+    background-color: $hover_color_list;
+    color: $text_color_hover;
+  }
+}
+
+@import "menu";
