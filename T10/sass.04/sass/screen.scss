@@ -1,0 +1,56 @@
+@import "mixin";
+
+$colorText: #eee;
+$colorTextHover: lighten($colorText, 10%); // DEBEMOS CALCULARLO
+$colorBack: #15a;
+$colorBackHover: lighten($colorBack, 10%); // DEBEMOS CALCULARLO
+$colorTitulo: darken($colorBack, 10%); // DEBEMOS CALCULARLO
+
+$theme: "dark";
+
+@if $theme == "dark" {
+  $colorBack: #138;
+} @else if $theme == "light" {
+  $colorBack: #ddf;
+  $colorText: #138;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: $colorText;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  @include text_color_background_color();
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  @include box-sizing(border_box);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
+
+@keyframes iluminar {
+  from {
+    background-color: $colorBack;
+    color: $colorText;
+  }
+  to {
+    background-color: $colorBackHover;
+    color: $colorTextHover;
+  }
+}
+
+@import "menu";
+@import "contenido";

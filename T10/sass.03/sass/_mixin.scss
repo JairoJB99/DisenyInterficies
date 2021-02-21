@@ -1,0 +1,37 @@
+@mixin text_color_background_color {
+  background-color: $colorBack;
+  color: $colorText;
+}
+
+@mixin background_color_text_color-hover {
+  color: $colorTextHover;
+  background-color: $colorBackHover;
+}
+
+@mixin box-sizing($dimensions) {
+  box-sizing: $dimensions;
+}
+
+@mixin transtions($property, $duration, $timing: linear) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
+
+@mixin animations($name, $duration, $timing: linear) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+}
+
+@mixin responsive($size) {
+  @if $size == "medium" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == "small" {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+}
